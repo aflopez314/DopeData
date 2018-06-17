@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Coda|Roboto+Condensed");
+
+h1{
+    font-family: 'Roboto Condensed';
+    margin-top: 3%;
+    margin-left: 3%;
+    float: none;
+    color: ghostwhite;
+    font-size: 300%;
+    
+}
+
+#navbar{
+    overflow: hidden;
+    top: 1;
+    margin-left: 3%;
+}
+
+
+#navbar a{
+    color: ghostwhite;
+    text-decoration: none;
+    font-style: italic;
+    float: left;
+    padding: 0.1% 0.6%;
+    font-size: 100%;
+    font-family: 'Coda';
+}
+
+#navbar a:hover{
+    color: #969696;
+    text-shadow: 0px 2px 1px #6f7272;
+}
+
+#bio {
+    margin-top: 3%;
+    text-align: left;
+    max-width: 23%;
+    padding-left: 3%;
+    color: ghostwhite;
+    font-size: 95%;
+    font-family: 'Coda';
+}
+
+#bio h2{
+    color: #FFC04C;
+    text-align: left;
+    font-size: 125%;
+    font-family: 'Coda'
+}
+
+body{
+    background-image: url("../img/blkBG.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.row{
+    float: right;
+    margin-right: 3%;
+    display: flex;
+}
+
+.col-sm-4{
+    flex: 25%;
+}
