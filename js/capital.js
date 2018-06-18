@@ -3,9 +3,9 @@
 var button;
 var capInput;
 var btn = "submit";
-/*var colorSwitch = fill(255,190,190);*/
+var capital = 0;
 
-function setup(){
+function setup() {
     var cnv = createCanvas(950,500);
     cnv.parent('sketch-holder');
     
@@ -13,31 +13,51 @@ function setup(){
     
     button = select('#submit');
     capInput = select('#capital');
-   
+    button.mousePressed(insertCap);
 }
 
-function buttonChange(){
-    var number = capInput.value();
+function insertCap() {
+    capital = setTimeout( capInput.value()1)
+}
+
+function buttonChange() {
     var property = document.getElementById(btn);
     
-    if (mouseIsPressed && number >= 10 && number <= 100){
+    if (capital >= 10 && capital <= 100){
         console.log("button pressed n shit");
         
         property.style.backgroundColor = "#706f6f";
+        
+      capital = setTimeout(resetT, capital*10);
+        
         }
     else {
         property.style.backgroundColor = "transparent";
-        /*console.log(property);*/
         }
     }
 
-function draw(){
-    fill(105,105,105);
+function resetT() {
+    if (capital > 0){
     
     //Future Value
     ellipse(20, 10, 10, 0);
     ellipse(20, 15, 10, 0);
     ellipse(20, 20, 10, 0);
+    
+    }
+    else if (capital > 100){
+        capital = 0;
+    }
+}
+
+function draw() {
+    
+    buttonChange();
+    resetT();
+   /* console.log(capital);*/
+    
+    fill(105,105,105);
+    
     
     //Value
     rect(15, 60, 10, 10)
@@ -57,7 +77,5 @@ function draw(){
     
     //New Value = Use + Exchange Value
     rect(160, 70, 10, 10);
-    
-    buttonChange();
     
     }
