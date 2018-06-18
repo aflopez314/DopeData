@@ -64,3 +64,21 @@ body{
 .col-sm-4{
     flex: 25%;
 }
+
+.cnt{
+    float: right;
+    position: relative;
+    width: 1000px;
+    height: 800px;
+}
+
+#textbox{
+    margin: 3% 3% 3%;
+    
+}
+
+#sketch-holder{
+    float: right;
+    margin: 0% 3% 3%;
+}
+
