@@ -46,6 +46,13 @@ h1{
     font-family: 'Coda';
 }
 
+.content-container{
+    display: grid;
+         grid-template: 380px / auto auto;
+         grid-row-gap: 75px;
+        justify-content: space-between;
+}
+
 #bio h2{
     color: #FFC04C;
     text-align: left;
@@ -58,26 +65,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-.row{
-    float: right;
-    margin-right: 3%;
-    display: flex;
-}
-
-.col-sm-4{
-    flex: 25%;
-}
-
-.cnt{
-    float: right;
-    position: relative;
-    width: 1000px;
-    height: 800px;
-}
-
-#textbox{
-    margin: 3% 3% 3%;
     
 }
 
