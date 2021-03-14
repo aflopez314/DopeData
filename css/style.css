@@ -52,7 +52,7 @@ h1{
     align-content: center;
 }
 
-#background, #info h2{
+#background h2{
     color: #DC143C;
     text-align: left;
     font-size: 125%;
